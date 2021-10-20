@@ -1,6 +1,6 @@
 <?php
 
-include_once("../back-end/article.php");
+include_once("../backend/article.php");
 include_once("page_content/navbar.php");
 include_once("page_content/article_header.php");
 if($response == "success"){
