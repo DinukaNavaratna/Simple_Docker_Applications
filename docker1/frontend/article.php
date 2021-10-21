@@ -2,7 +2,8 @@
 
 //include_once("backend-container/article.php");
 if(isset($_GET['id'])){
-	$url = "http://15.207.187.84:8001/article.php?id=".$_GET['id'];
+	$url = "backend-container/article.php?id=".$_GET['id'];
+	//$url = "http://15.207.187.84:8001/article.php?id=".$_GET['id'];
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
