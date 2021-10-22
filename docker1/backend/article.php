@@ -1,7 +1,5 @@
 <?php
 
-$response = "Hi";
-
 if(isset($_GET['id'])){
     $article_id = $_GET['id'];
 

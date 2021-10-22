@@ -11,9 +11,8 @@ function subscribe(){
         return;
     }
     $.ajax({
-        url:"../backend/subscribe.php",
-        type: "POST",
-        data: {"email": email},
+        url:"backend-container/subscribe.php?email="+email,
+        type: "GET",
         success:function(response){
             console.log("Resss: "+response);
             if(response == "success"){

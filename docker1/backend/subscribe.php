@@ -1,19 +1,21 @@
 <?php
 
-if(isset($_POST['email'])){
-    $email = $_POST['email'];
+if(isset($_GET['email'])){
+    $email = $_GET['email'];
 
     require_once 'db_con.php';
     try {
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "INSERT INTO `subscribers` (email) VALUES ('$email');";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        echo "success";
+        
+        if ($conn->query($sql) === TRUE) {
+            echo "success";
+        } else {
+            echo "failed<br>" . $conn->error;
+        }
     } catch(Exception $e) {
         echo "failed";
     }
-    $conn = null;
+    $conn->close();
 } else {
     echo "failed: Access Denied!";
 }
