@@ -2,8 +2,8 @@
 # Student
 #####################################################
 
-Name:
-ID:
+1. Name:
+2. ID:
 
 
 #####################################################
@@ -27,6 +27,7 @@ Frontend of the application is a HTML template taken from the web, and customize
 1. Run "docker-compose up" on the root directory where the 'docker-compose.yml' file is placed.
 2. Run the below command to import the data from the docker.sql file which contains some data that affects the performance of the application.
    "docker exec -i database mysql -uroot docker < docker.sql"
+3. Run "docker service scale database=<number>" to scale the database container. Current is 'replicas: 2'.
 
 
 #####################################################
