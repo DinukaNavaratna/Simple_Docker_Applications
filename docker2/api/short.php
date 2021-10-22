@@ -5,8 +5,7 @@
         $url = $_GET['url'];
         require_once 'db_con.php';
         try {
-            $sql = "INSERT INTO `urls` (link) VALUES (`$url`);";
-            $results = $conn->query($sql);
+            $sql = "INSERT INTO `urls` (link) VALUES ('$url');";
 
             if ($conn->query($sql) === TRUE) {
                 $id = $conn->insert_id;

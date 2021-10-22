@@ -3,7 +3,9 @@
 version: "3.3"
 services:
   web:
-    image: php:8.0-apache
+    build:
+      context: ./web
+      dockerfile: Dockerfile
     container_name: web
     depends_on:
       - api
@@ -22,8 +24,6 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: "url_shortner"
-      MYSQL_USER: "root"
-      MYSQL_PASSWORD: ""
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 20s

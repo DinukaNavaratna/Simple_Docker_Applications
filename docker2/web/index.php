@@ -25,7 +25,7 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
-  
+
   </head>
   <body>
 
@@ -83,7 +83,10 @@
                         
                         <div class="custom-btn-group mt-6">
                           <input type="text" id="url" class="btn mr-lg-2 custom-btn" placeholder="Paste Long URL"></input>
-                          <a href="#" id="shortner_btn" class="btn custom-btn custom-btn-bg custom-btn-link">Shorten</a>
+                          <a href="#" onclick="short();" id="shortner_btn" class="btn custom-btn custom-btn-bg custom-btn-link">Shorten</a>
+                        </div>
+                        <div class="mt-4">
+			  <p id="short_url" onclick="copyElementText(this.id)"></p>
                         </div>
                     </div>
                 </div>
