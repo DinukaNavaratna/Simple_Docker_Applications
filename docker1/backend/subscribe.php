@@ -1,12 +1,12 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 if(isset($_GET['email'])){
     $email = $_GET['email'];
 
     require_once 'db_con.php';
     try {
         $sql = "INSERT INTO `subscribers` (email) VALUES ('$email');";
-        
+
         if ($conn->query($sql) === TRUE) {
             echo "success";
         } else {

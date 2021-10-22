@@ -9,8 +9,6 @@
                     <div class="text-container">
                         <h1 class="h1-large">Developers Love & Businesses Trust Docker...</h1>
                         <p class="p-large">Build safer, share wider, run faster: New updates to our product subscriptions.</p>
-                        <a class="btn-solid-lg" href="sign-up.html">Sign up for free</a>
-                        <a class="btn-outline-lg page-scroll" href="#intro">Discover</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
@@ -77,7 +75,7 @@
                     <div class="text-container">
                         <h2>Docker makes development efficient and predictable</h2>
                         <p>Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker’s comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle.</p>
-                        <a class="btn-solid-reg" href="sign-up.html">Learn More</a>
+                        <a class="btn-solid-reg" href="#details">Learn More</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -96,7 +94,7 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-                    
+
                     <!-- Card -->
                     <div class="card">
                         <div class="card-icon-wrapper">
