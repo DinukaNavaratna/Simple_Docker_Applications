@@ -10,9 +10,7 @@ curl_close($ch);
 
 include_once("page_content/navbar.php");
 include_once("page_content/users_header.php");
-if($response[1] != "failed"){
-    include_once("page_content/users_body.php");
-}
+include_once("page_content/users_body.php");
 include_once("page_content/footer.php");
 
 ?>

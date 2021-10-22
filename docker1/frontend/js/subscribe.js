@@ -10,8 +10,11 @@ function subscribe(){
         alert("Email address is invalid!");
         return;
     }
+
+    var url = document.location.protocol + "//" + document.location.hostname + ":8001";
+    var api = url + "/subscribe.php?email="+email;
     $.ajax({
-        url:"backend-container/subscribe.php?email="+email,
+        url: api,
         type: "GET",
         success:function(response){
             console.log("Resss: "+response);
