@@ -86,7 +86,7 @@
                           <a href="#" onclick="short();" id="shortner_btn" class="btn custom-btn custom-btn-bg custom-btn-link">Shorten</a>
                         </div>
                         <div class="mt-4">
-			  <p id="short_url" onclick="copyElementText(this.id)"></p>
+			  <b id="short_url_lbl">Short URL: </b><p id="short_url" onclick="copyElementText(this.id)"></p>
                         </div>
                     </div>
                 </div>

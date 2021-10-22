@@ -1060,3 +1060,6 @@
 #short_url {
 	cursor: pointer;
 }
+#short_url_lbl {
+	visibility: hidden;
+}

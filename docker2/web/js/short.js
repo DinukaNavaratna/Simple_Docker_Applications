@@ -6,7 +6,7 @@ function short(){
     }
     url = url.toLowerCase();
 
-    var host = document.location.protocol + "//" + document.location.hostname + ":8001";
+    var host = document.location.protocol + "//" + document.location.hostname + ":9000";
     var api = host + "/short.php?url="+url;
     $.ajax({
         url: api,
@@ -17,8 +17,9 @@ function short(){
                 alert("Process Failed!");
             } else {
                 alert("URL Shortned!");
+		document.getElementById("short_url_lbl").style.visibility = "visible"; 
                 document.getElementById("url").value = "";
-                document.getElementById("short_url").innerHTML = "Short URL: "+document.location.protocol + "//" + document.location.hostname + ":8000/" + response;
+                document.getElementById("short_url").innerHTML = document.location.protocol + "//" + document.location.hostname + ":8000/" + response;
             }
         },
         error: function (jqXHR, exception) {

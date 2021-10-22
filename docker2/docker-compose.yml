@@ -43,4 +43,4 @@ services:
     volumes:
       - ./api:/var/www/html/
     ports:
-      - "8001:80"
+      - "9000:80"
