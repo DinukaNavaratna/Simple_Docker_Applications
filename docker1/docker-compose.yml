@@ -26,6 +26,8 @@ services:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 20s
       retries: 10
+    volumes:
+      - /dinuka/docker/docker1/database:/var/lib/mysql
     ports:
       - "6032:3306"
 
