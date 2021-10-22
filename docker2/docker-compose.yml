@@ -1,0 +1,46 @@
+# ./docker-compose.yml
+
+version: "3.3"
+services:
+  web:
+    image: php:8.0-apache
+    container_name: web
+    depends_on:
+      - api
+    volumes: 
+      - ./web:/var/www/html/
+    ports:
+      - "8000:80"
+
+  db:
+    container_name: db
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    deploy:
+      replicas: 2
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: "url_shortner"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: ""
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+    volumes:
+      - /dinuka/docker/docker2/db:/var/lib/mysql
+    ports:
+      - "6032:3306"
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: api
+    depends_on:
+      - db
+    volumes:
+      - ./api:/var/www/html/
+    ports:
+      - "8001:80"

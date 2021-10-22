@@ -1,3 +1,13 @@
+<?php
+	$url = "api/analytics.php";
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	$stats = unserialize(curl_exec($ch));
+	curl_close($ch);
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Marvel HTML Bootstrap 4 Template</title>
+    <title>URL Shortner</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unicons.css">
@@ -99,7 +109,7 @@
                     <div class="timeline">
                         <div class="timeline-wrapper">
                              <div class="timeline-yr">
-                                  <span></span>
+                                  <span><?php echo $stats[0]; ?></span>
                              </div>
                              <div class="timeline-info">
                                   <h3><span>Shortned Links</span><small>Total</small></h3>
@@ -109,7 +119,7 @@
 
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
-                                <span>2015</span>
+                                <span><?php echo $stats[1]; ?></span>
                             </div>
                             <div class="timeline-info">
                                 <h3><span>Google Links</span></h3>
@@ -119,21 +129,21 @@
                         
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
-                                <span>2013</span>
+                                <span><?php echo $stats[2]; ?></span>
                             </div>
                             <div class="timeline-info">
-                                <h3><span>YouTube Links</span></h3>
-                                <p>We have shortned this much of YouTube URLs.</p>
+                                <h3><span>Stackoverflow Links</span></h3>
+                                <p>We have shortned this much of Stackoverflow URLs.</p>
                             </div>
                         </div>
                         
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
-                                <span>2013</span>
+                                <span><?php echo $stats[3]; ?></span>
                             </div>
                             <div class="timeline-info">
-                                <h3><span>Facebook Links</span></h3>
-                                <p>We have shortned this much of Facebook URLs.</p>
+                                <h3><span>YouTube Links</span></h3>
+                                <p>We have shortned this much of YouTube URLs.</p>
                             </div>
                         </div>
 

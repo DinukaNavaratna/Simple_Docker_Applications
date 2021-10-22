@@ -3,7 +3,7 @@
     $servername = "db";
     $username = "root";
     $password = "";
-    $dbname = "URL_Shortner";
+    $dbname = "url_shortner";
 
     try {
       $conn = new mysqli($servername, $username, $password, $dbname);
