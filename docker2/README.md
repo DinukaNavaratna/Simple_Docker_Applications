@@ -1,5 +1,16 @@
 ## About
 
+This is a simple web application like bit.ly & TinyURL, which can be used for URL shortening. This web application is designed as a single page web application containing two main sections as ‘Home’ and ‘Analytics’. Users can paste the long URL and get a short URL that can take the user to the destination of the long URL.
+
+In the Analytics section, which is placed below the home section which is the header part where users can shorten the URLs, the users can see statistics of the total number of linked shortened and the number of Google, Stackoverflow, & YouTube links shortened.
+
+Also, this application has two display themes, as ‘Light’ mode, and ‘Dark’ mode. Users can toggle between these themes through the ‘Color Mode’ button on the top right corner.
+
+There is a 404 page that will be loaded if the users try to access an interface that is not included in the application or if the shortened URL that the user enters is not recognizable.
+
+
+## Technologies
+
 This application was developed using the below mentioned technologies & etc. and all the instruction have been provided according to them.
 
 1. OS: Ubuntu (Linux Kernal)
