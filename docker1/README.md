@@ -1,5 +1,14 @@
 ## About
 
+This is a simple website about Docker. There are 3 main interfaces.
+1.	index.php – Home page of the website which contains static content.
+2.	article.php – This is a dynamic page that shows the content according to the URL parameters. Related data is being retrieved from the database and shown to the users. This page can be accessed through the links provided on the Home page under the ‘Details’ section.
+3.	users.php – This is also a dynamic page that shows a list of users who have been subscribed to the website through the ‘Subscribe’ option on the website. This page is included to demonstrate the proof of data insertion to the database part of the application.
+
+
+
+## Technologies
+
 This application was developed using the below mentioned technologies & etc. and all the instruction have been provided according to them.
 
 1. OS: Ubuntu (Linux Kernal)
@@ -54,5 +63,5 @@ Header section of the Home page (Simple HTML + CSS)<br>
 <br>Subscribe section (JS + jQuery)<br>
 ![6](https://user-images.githubusercontent.com/26020039/142415513-a2596776-e367-428d-9be2-c15bd4875cd7.PNG)
 
-<br>Subscribed Users page (PHP) [This page was included just to demonstrate the data retrieval from DB function)<br>
+<br>Subscribed Users page (PHP) [This page was included just as a proof of data insertion to the database process)<br>
 ![7](https://user-images.githubusercontent.com/26020039/142415532-5f693ca6-45e7-4f55-8d04-616e4089ed78.PNG)
