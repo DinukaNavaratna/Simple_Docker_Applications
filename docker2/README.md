@@ -1,14 +1,4 @@
-#####################################################
-# Student
-#####################################################
-
-1. Name:
-2. ID:
-
-
-#####################################################
-# About
-#####################################################
+## About
 
 This application was developed using the below mentioned technologies & etc. and all the instruction have been provided according to them.
 
@@ -20,9 +10,8 @@ This application was developed using the below mentioned technologies & etc. and
 
 Frontend of the application is a HTML template taken from the web, and customized according to my requirement converting the pages to PHP. 
 
-#####################################################
-# Installation
-#####################################################
+
+## Installation
 
 1. Run "docker-compose up" on the root directory where the 'docker-compose.yml' file is placed.
 2. Run the below command to import the data from the docker.sql file which contains some data that affects the performance of the application.
@@ -30,9 +19,7 @@ Frontend of the application is a HTML template taken from the web, and customize
 3. Run "docker service scale database=<number>" to scale the database container. Current is 'replicas: 2'.
 
 
-#####################################################
-# Run Application
-#####################################################
+## Run Application
 
 1. Application can be accessed through "<host>:8000" or "<host>:8000/index.php".
     ! Note: Replace <host> with the real hostname/IP address.
@@ -44,3 +31,17 @@ Frontend of the application is a HTML template taken from the web, and customize
 5. Users can subscribe to newsletters through the 'Subscribe And Follow Us' section on the bottom of each page.
 6. Subscribed users can be viewed through 'users.php'. A link to this page is listed under the 'Other' in navbar of each page.
 
+<br><br>
+## Screen Shots
+
+<br>Home Page - URL Shortner section (HTML + CSS + JS + jQuery + PHP + MySQL)<br>
+![Capture](https://user-images.githubusercontent.com/26020039/142416893-943cdf8c-d411-40d7-9f82-20483f0cd3cd.PNG)
+
+<br>Home Page - Dark Mode (Simple HTML + CSS)<br>
+![3](https://user-images.githubusercontent.com/26020039/142416927-da89e377-669e-40c7-9b29-ba158092eb75.PNG)
+
+<br>Home Page - Analytics Section (HTML + CSS + PHP + MySQL)<br>
+![2](https://user-images.githubusercontent.com/26020039/142416959-ee8e86c9-d5d6-4934-89a2-8d3921c21174.PNG)
+
+<br>404 Page (HTML + CSS + PHP + htaccess)<br>
+![4](https://user-images.githubusercontent.com/26020039/142416979-0d0c2f25-75d9-456d-9ef1-8c2b2c22c65e.PNG)
